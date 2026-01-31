@@ -25,15 +25,16 @@
 - [x] Dashboard UI ✅ (live at /dashboard)
   - [x] Login/signup page ✅ (/login)
   - [x] Auto-reply management ✅
-  - [ ] Onboarding flow
-  - [ ] Settings page
+  - [x] Onboarding flow ✅ (/onboarding)
+  - [x] Settings page ✅ (/dashboard/settings)
 - [x] Database schema ✅ (database/schema.sql)
   - [x] Users table
   - [x] Auto-replies table
   - [x] Messages log
-  - [x] Waitlist table
+  - [x] Waitlist table ✅ (LIVE)
 - [x] Supabase client library ✅ (src/lib/supabase.ts)
-- [ ] Connect to real Supabase project
+- [x] Templates library ✅ (src/lib/templates.ts)
+- [ ] Run schema in Supabase (scripts/setup-supabase.md)
 
 ## Phase 4: WhatsApp Integration (Week 3)
 - [x] API docs written ✅ (docs/WHATSAPP-API-SETUP.md)
