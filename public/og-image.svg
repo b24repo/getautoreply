@@ -1,0 +1,26 @@
+<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#22c55e"/>
+      <stop offset="100%" style="stop-color:#16a34a"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  
+  <!-- Logo/Icon -->
+  <text x="100" y="200" font-family="Arial, sans-serif" font-size="80" fill="white">💬</text>
+  
+  <!-- Title -->
+  <text x="100" y="300" font-family="Arial, sans-serif" font-size="72" font-weight="bold" fill="white">GetAutoReply</text>
+  
+  <!-- Subtitle -->
+  <text x="100" y="380" font-family="Arial, sans-serif" font-size="36" fill="rgba(255,255,255,0.9)">WhatsApp Auto-Reply for Small Businesses</text>
+  
+  <!-- Features -->
+  <text x="100" y="480" font-family="Arial, sans-serif" font-size="28" fill="rgba(255,255,255,0.8)">✅ 24/7 Auto-Reply  •  ✅ 5-min Setup  •  ✅ Just ₹299/month</text>
+  
+  <!-- URL -->
+  <text x="100" y="560" font-family="Arial, sans-serif" font-size="32" fill="white">getautoreply.in</text>
+</svg>

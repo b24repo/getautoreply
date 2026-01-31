@@ -20,13 +20,13 @@ function HomeContent() {
         <meta property="og:description" content="Never miss a customer message. Auto-reply to WhatsApp 24/7. Perfect for kirana stores, doctors, tutors. Just ₹299/month." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://getautoreply.in" />
-        <meta property="og:image" content="https://getautoreply.in/og-image.png" />
+        <meta property="og:image" content="https://og-image.vercel.app/GetAutoReply%20-%20WhatsApp%20Auto-Reply.png?theme=light&md=1&fontSize=100px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fvercel-triangle-black.svg" />
         
         {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="GetAutoReply - WhatsApp Auto-Reply for Small Businesses" />
         <meta name="twitter:description" content="Never miss a customer message. Auto-reply 24/7. Just ₹299/month." />
-        <meta name="twitter:image" content="https://getautoreply.in/og-image.png" />
+        <meta name="twitter:image" content="https://og-image.vercel.app/GetAutoReply%20-%20WhatsApp%20Auto-Reply.png?theme=light&md=1&fontSize=100px" />
         
         {/* Extra SEO */}
         <meta name="keywords" content="whatsapp auto reply, whatsapp bot, business whatsapp, kirana store, small business india, whatsapp automation" />
