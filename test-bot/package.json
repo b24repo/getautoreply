@@ -1,0 +1,14 @@
+{
+  "name": "getautoreply-test-bot",
+  "version": "1.0.0",
+  "description": "Test bot for GetAutoReply keyword-based auto-replies",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "@whiskeysockets/baileys": "^6.7.16",
+    "pino": "^9.6.0",
+    "qrcode-terminal": "^0.12.0"
+  }
+}
