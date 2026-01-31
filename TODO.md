@@ -5,11 +5,11 @@
 - [x] Landing page
 - [x] Domain setup
 - [x] Vercel deployment
-- [x] Waitlist form
+- [x] Waitlist form (FormSubmit.co → virendra@gtpsoftwares.com)
 
 ## Phase 2: Marketing (This Week)
 - [x] Post on LinkedIn ✅ (Jan 31 - linkedin.com/feed/update/urn:li:share:7423279818470998016/)
-- [ ] Post on Twitter/X
+- [x] Post on Twitter/X ✅ (Jan 31 - x.com/virendrakv/status/2017515558124851667)
 - [ ] WhatsApp status posts
 - [ ] Share in 5 Facebook groups
 - [ ] Direct outreach to 20 businesses
