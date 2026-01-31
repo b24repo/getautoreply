@@ -168,7 +168,7 @@ function HomeContent() {
           <div className="max-w-xl mx-auto text-center text-white">
             <h2 className="text-3xl font-bold mb-4">Join the Waitlist 🚀</h2>
             <p className="text-xl opacity-90 mb-8">Be first to get access. Early supporters get 1 month FREE!</p>
-            <form className="space-y-4" action="https://formsubmit.co/virendra@gtpsoftwares.com" method="POST">
+            <form className="space-y-4" action="https://formsubmit.co/virendra.vaishnav@gmail.com" method="POST">
               {/* FormSubmit config */}
               <input type="hidden" name="_subject" value="🚀 New GetAutoReply Waitlist Signup!" />
               <input type="hidden" name="_captcha" value="false" />
