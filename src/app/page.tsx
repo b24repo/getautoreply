@@ -12,6 +12,7 @@ function HomeContent() {
       <head>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💬</text></svg>" />
         <title>GetAutoReply - 24/7 WhatsApp Auto-Reply for Your Business</title>
         <meta name="description" content="Never miss a customer message. Simple WhatsApp auto-reply bot for Indian businesses. Just ₹299/month." />
         
@@ -34,6 +35,10 @@ function HomeContent() {
         <link rel="canonical" href="https://getautoreply.in" />
         
         <script src="https://cdn.tailwindcss.com"></script>
+        
+        {/* Simple Analytics - privacy-friendly, no cookie banner needed */}
+        <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+        <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerPolicy="no-referrer-when-downgrade" /></noscript>
       </head>
       <body className="bg-white">
         {/* Thank You Modal */}
