@@ -1,0 +1,20 @@
+# GetAutoReply Hindi Voiceover Script
+# Duration: ~28 seconds
+# Voice: Riya Rao - Hindi Customer Care (ElevenLabs)
+# Generated: Jan 31, 2026
+
+नमस्ते! GetAutoReply में आपका स्वागत है। अब आपके व्हाट्सएप मैसेज का जवाब अपने आप मिलेगा - 24 घंटे, 7 दिन। देखिए कैसे एक किराना दुकान मालिक ने अपना बिज़नेस बढ़ाया। रात के 11 बजे भी कस्टमर को तुरंत जवाब मिलता है। ऑर्डर की पूछताछ? अपने आप जवाब। दुकान का समय? अपने आप जवाब। प्राइस लिस्ट? अपने आप जवाब। GetAutoReply - आपका डिजिटल दुकानदार!
+
+---
+
+# English Translation:
+Hello! Welcome to GetAutoReply. Now your WhatsApp messages will be answered automatically - 24 hours, 7 days. See how a kirana store owner grew his business. Even at 11 PM, customers get instant replies. Order inquiry? Auto-reply. Store timings? Auto-reply. Price list? Auto-reply. GetAutoReply - Your digital shopkeeper!
+
+---
+
+# To Download Audio:
+1. Go to elevenlabs.io
+2. Sign in with Google (Virendra's account)
+3. Text to Speech → History tab
+4. Find "नमस्ते! GetAutoReply..." entry (Jan 31)
+5. Click → Download
