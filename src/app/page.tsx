@@ -192,12 +192,7 @@ function HomeContent() {
           <div className="max-w-xl mx-auto text-center text-white">
             <h2 className="text-3xl font-bold mb-4">Join the Waitlist 🚀</h2>
             <p className="text-xl opacity-90 mb-8">Be first to get access. Early supporters get 1 month FREE!</p>
-            <form className="space-y-4" action="https://formsubmit.co/virendra.vaishnav@gmail.com" method="POST">
-              {/* FormSubmit config */}
-              <input type="hidden" name="_subject" value="🚀 New GetAutoReply Waitlist Signup!" />
-              <input type="hidden" name="_captcha" value="false" />
-              <input type="hidden" name="_next" value="https://getautoreply.in?thanks=1" />
-              <input type="hidden" name="_template" value="table" />
+            <form className="space-y-4" action="/api/waitlist" method="POST">
               <input type="text" name="name" placeholder="Your Name" required className="w-full px-6 py-4 rounded-full text-gray-900 text-lg" />
               <input type="tel" name="whatsapp" placeholder="WhatsApp Number" required className="w-full px-6 py-4 rounded-full text-gray-900 text-lg" />
               <select name="business_type" required className="w-full px-6 py-4 rounded-full text-gray-900 text-lg">

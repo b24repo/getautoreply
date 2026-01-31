@@ -1,49 +1,46 @@
 import { NextRequest, NextResponse } from 'next/server';
+import { createClient } from '@supabase/supabase-js';
 
-// For now, we'll log to console and could later integrate with Supabase
-// The form currently uses FormSubmit.co for simplicity
+const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL!;
+const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!;
+const supabase = createClient(supabaseUrl, supabaseKey);
 
 export async function POST(req: NextRequest) {
   try {
-    const body = await req.json();
-    const { name, whatsapp, business_type } = body;
+    const formData = await req.formData();
+    const name = formData.get('name') as string;
+    const whatsapp = formData.get('whatsapp') as string;
+    const business_type = formData.get('business_type') as string;
     
     // Validate
     if (!name || !whatsapp || !business_type) {
-      return NextResponse.json(
-        { error: 'Missing required fields' },
-        { status: 400 }
-      );
+      return NextResponse.redirect(new URL('/?error=missing', req.url));
     }
     
-    // Log for now (will add Supabase later)
-    console.log('New waitlist signup:', { name, whatsapp, business_type });
+    // Save to Supabase
+    const { error } = await supabase
+      .from('waitlist')
+      .insert({
+        name,
+        phone: whatsapp,
+        business_type,
+      });
     
-    // TODO: Add to Supabase when configured
-    // const { data, error } = await supabase
-    //   .from('waitlist')
-    //   .insert({ name, phone: whatsapp, business_type })
-    //   .select()
-    //   .single();
+    if (error) {
+      console.error('Supabase error:', error);
+      return NextResponse.redirect(new URL('/?error=db', req.url));
+    }
     
-    // TODO: Send welcome WhatsApp message
-    
-    return NextResponse.json({ 
-      success: true,
-      message: 'Successfully joined waitlist!'
-    });
+    // Success - redirect with thanks
+    return NextResponse.redirect(new URL('/?thanks=1', req.url));
     
   } catch (error) {
     console.error('Waitlist error:', error);
-    return NextResponse.json(
-      { error: 'Failed to join waitlist' },
-      { status: 500 }
-    );
+    return NextResponse.redirect(new URL('/?error=server', req.url));
   }
 }
 
 export async function GET() {
-  // Health check endpoint
   return NextResponse.json({ 
     status: 'ok',
     message: 'Waitlist API is running'
