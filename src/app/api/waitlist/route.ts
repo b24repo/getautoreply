@@ -14,7 +14,7 @@ export async function POST(req: NextRequest) {
     
     // Validate
     if (!name || !whatsapp || !business_type) {
-      return NextResponse.redirect(new URL('/?error=missing', req.url));
+      return NextResponse.redirect(new URL('/?error=missing', req.url), 303);
     }
     
     // Save to Supabase
@@ -28,15 +28,15 @@ export async function POST(req: NextRequest) {
     
     if (error) {
       console.error('Supabase error:', error);
-      return NextResponse.redirect(new URL('/?error=db', req.url));
+      return NextResponse.redirect(new URL('/?error=db', req.url), 303);
     }
     
-    // Success - redirect with thanks
-    return NextResponse.redirect(new URL('/?thanks=1', req.url));
+    // Success - redirect with thanks (303 converts POST to GET)
+    return NextResponse.redirect(new URL('/?thanks=1', req.url), 303);
     
   } catch (error) {
     console.error('Waitlist error:', error);
-    return NextResponse.redirect(new URL('/?error=server', req.url));
+    return NextResponse.redirect(new URL('/?error=server', req.url), 303);
   }
 }
 
