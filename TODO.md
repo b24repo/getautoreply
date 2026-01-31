@@ -8,7 +8,7 @@
 - [x] Waitlist form
 
 ## Phase 2: Marketing (This Week)
-- [ ] Post on LinkedIn
+- [x] Post on LinkedIn ✅ (Jan 31 - linkedin.com/feed/update/urn:li:share:7423279818470998016/)
 - [ ] Post on Twitter/X
 - [ ] WhatsApp status posts
 - [ ] Share in 5 Facebook groups

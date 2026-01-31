@@ -1,4 +1,12 @@
-export default function Home() {
+'use client';
+
+import { useSearchParams } from 'next/navigation';
+import { Suspense } from 'react';
+
+function HomeContent() {
+  const searchParams = useSearchParams();
+  const showThanks = searchParams.get('thanks') === '1';
+
   return (
     <html lang="en">
       <head>
@@ -9,6 +17,20 @@ export default function Home() {
         <script src="https://cdn.tailwindcss.com"></script>
       </head>
       <body className="bg-white">
+        {/* Thank You Modal */}
+        {showThanks && (
+          <div className="fixed inset-0 bg-black/50 z-[100] flex items-center justify-center p-4">
+            <div className="bg-white rounded-2xl p-8 max-w-md text-center animate-bounce-in">
+              <div className="text-6xl mb-4">🎉</div>
+              <h2 className="text-2xl font-bold text-gray-900 mb-2">You&apos;re on the list!</h2>
+              <p className="text-gray-600 mb-6">Thanks for joining! We&apos;ll WhatsApp you when we launch.</p>
+              <a href="/" className="inline-block bg-green-500 text-white px-6 py-3 rounded-full font-semibold hover:bg-green-600">
+                Got it! 👍
+              </a>
+            </div>
+          </div>
+        )}
+
         {/* Header */}
         <header className="fixed w-full bg-white/95 backdrop-blur-sm z-50 border-b">
           <div className="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
@@ -146,7 +168,12 @@ export default function Home() {
           <div className="max-w-xl mx-auto text-center text-white">
             <h2 className="text-3xl font-bold mb-4">Join the Waitlist 🚀</h2>
             <p className="text-xl opacity-90 mb-8">Be first to get access. Early supporters get 1 month FREE!</p>
-            <form className="space-y-4" action="https://formspree.io/f/xpwzgvqk" method="POST">
+            <form className="space-y-4" action="https://formsubmit.co/virendra@gtpsoftwares.com" method="POST">
+              {/* FormSubmit config */}
+              <input type="hidden" name="_subject" value="🚀 New GetAutoReply Waitlist Signup!" />
+              <input type="hidden" name="_captcha" value="false" />
+              <input type="hidden" name="_next" value="https://getautoreply.in?thanks=1" />
+              <input type="hidden" name="_template" value="table" />
               <input type="text" name="name" placeholder="Your Name" required className="w-full px-6 py-4 rounded-full text-gray-900 text-lg" />
               <input type="tel" name="whatsapp" placeholder="WhatsApp Number" required className="w-full px-6 py-4 rounded-full text-gray-900 text-lg" />
               <select name="business_type" required className="w-full px-6 py-4 rounded-full text-gray-900 text-lg">
@@ -181,5 +208,13 @@ export default function Home() {
         </footer>
       </body>
     </html>
+  );
+}
+
+export default function Home() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <HomeContent />
+    </Suspense>
   );
 }
