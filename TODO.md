@@ -21,23 +21,26 @@
 - [ ] Get 50 waitlist signups
 
 ## Phase 3: MVP Dashboard (Week 2)
-- [ ] User authentication (Supabase)
-- [ ] Dashboard UI
-  - [ ] Login/signup page
+- [x] Dashboard UI ✅ (live at /dashboard)
+  - [x] Login/signup page ✅ (/login)
+  - [x] Auto-reply management ✅
   - [ ] Onboarding flow
-  - [ ] Auto-reply management
   - [ ] Settings page
-- [ ] Database schema
-  - [ ] Users table
-  - [ ] Auto-replies table
-  - [ ] Messages log
+- [x] Database schema ✅ (database/schema.sql)
+  - [x] Users table
+  - [x] Auto-replies table
+  - [x] Messages log
+  - [x] Waitlist table
+- [x] Supabase client library ✅ (src/lib/supabase.ts)
+- [ ] Connect to real Supabase project
 
 ## Phase 4: WhatsApp Integration (Week 3)
+- [x] API docs written ✅ (docs/WHATSAPP-API-SETUP.md)
+- [x] Webhook receiver ✅ (api/webhook)
 - [ ] Meta Business verification
-- [ ] WhatsApp Cloud API setup
-- [ ] Webhook receiver
-- [ ] Message handler
-- [ ] Auto-reply logic
+- [ ] WhatsApp Cloud API credentials
+- [ ] Message handler with DB
+- [ ] Auto-reply logic connected
 
 ## Phase 5: Payments (Week 4)
 - [ ] Razorpay integration
