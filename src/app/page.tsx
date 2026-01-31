@@ -14,6 +14,25 @@ function HomeContent() {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>GetAutoReply - 24/7 WhatsApp Auto-Reply for Your Business</title>
         <meta name="description" content="Never miss a customer message. Simple WhatsApp auto-reply bot for Indian businesses. Just ₹299/month." />
+        
+        {/* Open Graph / Social Sharing */}
+        <meta property="og:title" content="GetAutoReply - WhatsApp Auto-Reply for Small Businesses" />
+        <meta property="og:description" content="Never miss a customer message. Auto-reply to WhatsApp 24/7. Perfect for kirana stores, doctors, tutors. Just ₹299/month." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://getautoreply.in" />
+        <meta property="og:image" content="https://getautoreply.in/og-image.png" />
+        
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="GetAutoReply - WhatsApp Auto-Reply for Small Businesses" />
+        <meta name="twitter:description" content="Never miss a customer message. Auto-reply 24/7. Just ₹299/month." />
+        <meta name="twitter:image" content="https://getautoreply.in/og-image.png" />
+        
+        {/* Extra SEO */}
+        <meta name="keywords" content="whatsapp auto reply, whatsapp bot, business whatsapp, kirana store, small business india, whatsapp automation" />
+        <meta name="author" content="GetAutoReply" />
+        <link rel="canonical" href="https://getautoreply.in" />
+        
         <script src="https://cdn.tailwindcss.com"></script>
       </head>
       <body className="bg-white">
