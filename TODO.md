@@ -5,7 +5,8 @@
 - [x] Landing page
 - [x] Domain setup
 - [x] Vercel deployment
-- [x] Waitlist form (FormSubmit.co → virendra@gtpsoftwares.com)
+- [x] Waitlist form → Supabase
+- [x] WhatsApp notifications (via OpenClaw)
 
 ## Phase 2: Marketing (This Week)
 - [x] Post on LinkedIn ✅ (Jan 31)
